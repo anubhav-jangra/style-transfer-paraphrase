@@ -22,7 +22,7 @@ from __future__ import (absolute_import, division, print_function,
 import logging
 import os
 import sys
-sys.path.append('/mnt/disks/mount_dir/tstar/style-transfer-paraphrase/transformers')
+sys.path.append(os.path.join(os.getcwd, 'style-transfer-paraphrase/transformers'))
 print(sys.path)
 
 import numpy as np
