@@ -277,7 +277,7 @@ def sample_sequence(model, length, context, style_content_vectors, segments, eos
         past = None
         past2 = None
         for i in range(new_length):
-            logits, past = get_logits(
+            logits, past = get_logits_old(
                 model, i, generated, segments, style_content_vectors, past
             )
             if interpolation:
